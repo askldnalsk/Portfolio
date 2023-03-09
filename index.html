@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/nomalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -20,7 +23,6 @@
                     <div class="line-top-right"></div>
                 </div>
                 <a href="index.html" class="logo"></a>
-
                 <span class="main-tittle">O SE HOON'S PORTFOLIO</span>
                 <div class="bottom-line">
                     <div class="line-bottom-left"></div>
@@ -32,20 +34,37 @@
                         <li><a href="#"><span>HOME</span></a></li>
                         <li><a href="#"><span>ABOUT ME</span></a></li>
                         <li><a href="#"><span>PORTFOLIO</span></a></li>
-                        <li><a href="#"><span>HISTORY</span></a></li>
+                        <li><a href="#"><span>EXPERIENCE</span></a></li>
                     </ul>
                 </nav>
+                <div class="line-end"></div>
             </div>
         </header>
-        <!-- 메인비쥬얼 -->
+        <!-- visual -->
 
-
-
-        <section class="visual"></section>
+        <section class="visual">
+            <div class="swiper swvisual">
+                <div swiper-wrapper>
+                    <div class="swiper-slide">
+                        <div class="visual-img bg-1"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="visual-img bg-2"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="visual-img bg-3"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="visual-img bg-4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section></section>
         <section></section>
         <section></section>
         <footer></footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
