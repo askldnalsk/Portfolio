@@ -1,0 +1,6 @@
+/* Noto sans */
+@font-face {
+    font-family: "NotoSansKR";
+    font-style: normal;
+    src: url("NotoSansKR-Medium.otf") format("opentype");
+}
