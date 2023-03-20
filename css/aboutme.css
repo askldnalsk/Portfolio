@@ -30,16 +30,12 @@ body{
     line-height: 1; /* x1 */
     letter-spacing: 0;
     word-break: keep-all; /* 단어를 지켜서 줄내림 */
-    height: 100vh;
     overflow-x: hidden;
-    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
 }
 
-.wrap{ 
-    width: 100%; 
-    height: 100vh;
-    display: block;
-}
+
 /* header */
 .line{ 
     padding-top: 100px;
@@ -163,4 +159,216 @@ body{
     border-bottom: 1px solid;
     width: 1720px;
     margin: 0 auto;
+}
+/* about me section */
+.aboutme-box{ 
+    margin-left: 6rem;
+    margin-top: 3rem;
+}
+.aboutme-box .aboutme-head{ 
+    font-family: 'Abril Fatface', cursive;
+    font-size: 7rem;
+}
+.aboutme-image{ 
+    background: url("../images/profileimg.png") no-repeat center;
+    background-size: cover;
+    display: block;
+    width: 400px;
+    height: 530px;
+}
+.about-hello{ 
+    font-size:3rem;
+    line-height: 4rem;
+}
+.about-flex-box{ 
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+}
+/* 형광펜효과 */
+.underline-text{ 
+    box-shadow: inset 0 -20px 0 hsla(236, 91%, 83%, 0.93);
+}
+.line-section-end{ 
+    border-bottom: 1px solid;
+    width: 1720px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+/* skills section */
+.my-skill{ 
+    background-color: #3d5980;
+    display: block;
+}
+.skills-head{ 
+    font-family: 'Abril Fatface', cursive;
+    font-size: 7rem;
+    padding-top: 2rem;
+    margin-left: 2rem;
+}
+.skills{ 
+    background-color: #3d5980;
+    margin-left: 4rem;
+}
+/* chart */
+.container{ 
+    max-width: 600px;
+    padding: 20px;
+}
+.progress-bar {
+    height: 3px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    background-color: #55708d;
+}
+.progress-bar .progress {
+    position: relative;
+    height: 100%;
+    background-color: #cfd6dd;
+    transition: width 0.5s ease-out;
+    border-radius: 0px 2px 2px 0px;
+}
+.progress-bar .glow {
+    width: 60px;
+    max-width: 100%;
+    height: 100%;
+    float: right;
+}
+.progress-bar .glow::before,
+.progress-bar .glow::after {
+    content: "";
+    display: block;
+    position: relative;
+    border-radius: 0px 2px 2px 0px;
+}
+.progress-bar .glow::before {
+    background: transparent;
+    height: 100%;
+    box-shadow: 0px 0px 10px #cfd6dd, 0px 0px 10px #04bfff;
+    z-index: -5;
+}
+.progress-bar .glow::after {
+    background: linear-gradient(to right, #3d5980 0%, transparent 100%);
+    height: calc(100% + 10px + 10px);
+    width: calc(100% + 10px);
+    top: -10px;
+    left: -10px;
+    z-index: -3;
+}
+.label {
+    color: #ccc;
+    text-shadow: 0px 0px 2px #cfd6dd;
+    font-size: 24px;
+}
+.label.one {
+    animation: label 0.5s ease-out 0s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin-bottom: 1rem;
+}
+.label.two {
+    animation: label 0.5s ease-out 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin-bottom: 1rem;
+}
+.label.three {
+    animation: label 0.5s ease-out 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin-bottom: 1rem;
+}
+.label.four { 
+    animation: label 0.5s ease-out 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin-bottom: 1rem;
+}
+.label.five { 
+    animation: label 0.5s ease-out 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin-bottom: 1rem;
+}
+
+.fill-1 {
+    animation: fill-1 0.5s ease-out 0s;
+    animation-fill-mode: forwards;
+    width: 0%;
+}
+.fill-2 {
+    animation: fill-2 0.5s ease-out 0.5s;
+    animation-fill-mode: forwards;
+    width: 0%;
+}
+
+.fill-3 {
+    animation: fill-3 0.5s ease-out 1s;
+    animation-fill-mode: forwards;
+    width: 0%;
+}
+.fill-4 { 
+    animation: fill-4 0.5s ease-out 1.5s;
+    animation-fill-mode: forwards;
+    width: 0%;
+}
+.fill-5{ 
+    animation: fill-5 0.5s ease-out 2s;
+    animation-fill-mode: forwards;
+    width: 0%;
+}
+
+/* key frame */
+
+@keyframes fill-1 {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 90%;
+    }
+}
+@keyframes fill-2 {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+}
+@keyframes fill-3 {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+}
+@keyframes fill-4 {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 50%;
+    }
+}
+@keyframes fill-5 {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 50%;
+    }
+}
+
+@keyframes label {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 0.9;
+      transform: translateY(0);
+    }
 }
