@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="css/aboutme.css">
     <link rel="stylesheet" href="css/nomalize.css">
@@ -41,14 +43,17 @@
         <div class="content">
             <section class="aboutme">
                 <div class="aboutme-box">
-                    <h1 class="aboutme-head">About Me</h1>
+                    <div class="aboutme-image"></div>
                     <div class="about-flex-box">
+                    <h1 class="aboutme-head">About Me</h1>
                         <span class="about-hello">안녕하세요,<br>
-                        <span class="underline-text">무한한 성장 가능성</span>을 지닌 웹 퍼블리셔 오세훈입니다.<br>
+                        <div data-aos="zoom-out-up" style="display: inline-block;">
+                            <span class="underline-text">무한한 성장 가능성</span>
+                        </div>
+                            을 지닌 웹 퍼블리셔 오세훈입니다.<br>
                         제가 가진 역량을 활용하여 소통하고<br>
                         발전해 나가는 사람이 되겠습니다.
                         </span>
-                        <div class="aboutme-image"></div>
                     </div>
                 </div>
             </section>
@@ -104,12 +109,24 @@
             </section>
             <div class="line-section-end"></div>
             <!-- possibility -->
-            <section>
+            <section class="my-possibility">
                 <div class="possibility">
-                    <h1 class="possibility-head">possibility</h1>
+                    <h1 class="possibility-head">Infinite-possibility</h1>
+                    <div>
+                        <canvas id="myChartOne"></canvas>
+                    </div>
                 </div>
             </section>
         </div>
     </div>
+    <!-- JS -->
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- chart.js -->
+    <script src="path/to/chartjs/dist/chart.umd.js"></script>
+    <script src="js/chart.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

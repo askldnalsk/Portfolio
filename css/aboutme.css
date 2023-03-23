@@ -169,16 +169,16 @@ body{
 }
 /* about me section */
 .aboutme{ 
-    max-width: 1320px;
     height: auto;
 }
-.aboutme-box{ 
-    margin-left: 6rem;
+.aboutme-box{
+    display: flex;
+    gap: 45px; 
     margin-top: 3rem;
 }
 .aboutme-box .aboutme-head{ 
     font-family: 'Abril Fatface', cursive;
-    font-size: 7rem;
+    font-size: 3rem;
 }
 .aboutme-image{ 
     background: url("../images/profileimg.png") no-repeat center;
@@ -188,13 +188,13 @@ body{
     height: 530px;
 }
 .about-hello{ 
-    font-size:3rem;
-    line-height: 4rem;
+    font-size:1.5rem;
+    line-height: 2.5rem;
 }
 .about-flex-box{ 
     display: flex;
-    justify-content: flex-start;
-    gap: 100px;
+    flex-direction: column;
+    gap: 30px;
 }
 
 /* 형광펜효과 */
@@ -203,18 +203,19 @@ body{
 }
 .line-section-end{ 
     border-bottom: 1px solid;
-    width: 1720px;
+    width: 1280px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 3rem;
 }
 /* skills section */
 .my-skill{ 
     background-color: #3d5980;
     display: block;
+    margin-top: 3rem;
 }
 .skills-head{ 
     font-family: 'Abril Fatface', cursive;
-    font-size: 7rem;
+    font-size: 3rem;
     padding-top: 2rem;
     margin-left: 2rem;
 }
@@ -329,6 +330,14 @@ body{
     animation: fill-5 0.5s ease-out 2s;
     animation-fill-mode: forwards;
     width: 0%;
+}
+/* possibility section */
+.my-possibility{ 
+    margin-top: 3rem;
+}
+.possibility-head{ 
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3rem;
 }
 
 /* key frame */
