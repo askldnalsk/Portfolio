@@ -41,6 +41,7 @@ body{
     display: block;
 }
 /* header */
+
 .line{ 
     padding-top: 100px;
     display: flex;
@@ -163,4 +164,64 @@ body{
     border-bottom: 1px solid;
     width: 1720px;
     margin: 0 auto;
+}
+/* content */
+.container{ 
+    width: 1920px;
+    height: 1024px;
+    margin: 0 auto;
+    color: black;
+    position: relative;
+}
+/* portfolio-left */
+.portfolio-left{ 
+    background: #f0ae50;
+    width: 792px;
+    height: 1024px;
+    position: relative;
+    padding-left: 400px;
+    padding-top: 170px;
+    float: left;
+}
+.container .portfolio-left .selected-txt{ 
+    color:#fff;
+    padding-bottom: 1.2rem;
+}
+.container .portfolio-menu .po-menu-list a { 
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 45px;
+    color:#333;
+}
+
+/* portfolio-right */
+.portfolio-right{ 
+    width: 1128px;
+    height: 1024px;
+    position: relative;
+    padding-right: 50px;
+    padding-top: 230px;
+    overflow: hidden;
+}
+.project-name{ 
+    position: relative;
+    top: 54px;
+}
+.project-name > p{ 
+    font-size: 109px;
+    font-weight: 800;
+    line-height: 115px;
+    color: #000;
+    margin-bottom: 30px;
+}
+.project-name > span{ 
+    color: #fff;
+    font-weight: 300;
+}
+.button{ 
+    font-weight: 500;
+    line-height: 52px;
+    position: absolute;
+    right: 457px;
+    bottom: 134px;
 }
