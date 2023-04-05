@@ -175,7 +175,7 @@ body{
 }
 /* portfolio-left */
 .portfolio-left{ 
-    background: #f0ae50;
+    background: #9E8EFF;
     width: 792px;
     height: 1024px;
     position: relative;
@@ -191,23 +191,7 @@ body{
     font-size: 24px;
     font-weight: 800;
     line-height: 45px;
-    color:#fff;
-}
-.container .portfolio-menu .po-menu-list a .no{ 
-    font-size: 14px;
-    font-weight: 800;
-    line-height: 45px;
-    color: rgba(255, 255, 255, 0);
-    display: inline-block;
-    width: 0;
-    visibility: hidden;
-    transition: all 0.3s;
-}
-.container .portfolio-menu .po-menu-list a:hover .no{ 
-    width: auto;
-    color: #fff;
-    visibility: visible;
-    padding-left: 22px;
+    color:#333;
 }
 .project-name{ 
     position: relative;
