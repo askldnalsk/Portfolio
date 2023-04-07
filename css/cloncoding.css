@@ -183,6 +183,7 @@ body{
     padding-top: 170px;
     float: left;
 }
+/* 호버 했을때 */
 .container .portfolio-left .selected-txt{ 
     color:#fff;
     padding-bottom: 1.2rem;
@@ -191,7 +192,32 @@ body{
     font-size: 24px;
     font-weight: 800;
     line-height: 45px;
-    color:#333;
+    color:#fff;
+}
+.container .portfolio-menu .po-menu-list a .no{ 
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0);
+    display: inline-block;
+    width: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+.container .portfolio-menu .po-menu-list a:hover .no{ 
+    width: auto;
+    color: #fff;
+    visibility: visible;
+    padding-left: 10px;
+}
+/* 선택된 리스트 */
+.po-menu-list-2 a{ 
+    color: #000 !important;
+}
+.select-no{ 
+    font-size: 14px;
+    font-weight: 800;
+    padding-left: 10px;
 }
 .project-name{ 
     position: relative;

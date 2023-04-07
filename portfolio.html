@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="css/nomalize.css">
     <link rel="stylesheet" href="css/portfolio.css">
@@ -27,8 +29,8 @@
                 <!-- menu bar -->
                 <nav class="nav">
                     <ul class="gnb">
-                        <li><a href="#"><span>HOME</span></a></li>
-                        <li><a href="#"><span>ABOUT ME</span></a></li>
+                        <li><a href="index.html"><span>HOME</span></a></li>
+                        <li><a href="aboutme.html"><span>ABOUT ME</span></a></li>
                         <li><a href="#"><span>PORTFOLIO</span></a></li>
                         <li><a href="#"><span>EXPERIENCE</span></a></li>
                     </ul>
@@ -43,21 +45,21 @@
                 <div class="selected-txt">SELECTED PROJECTS</div>
                 <div class="portfolio-menu">
                     <ul class="po-menu-list">
-                        <li class="po-menu-list-1"><a href="#"><span class="no">01.</span>Personal Website</a></li>
+                        <li class="po-menu-list-1"><a href="#"><span class="select-no">01.</span>Personal Website</a></li>
                         <li class="po-menu-list-2"><a href="clonecoding.html"><span class="no">02.</span>Clone Coding</a></li>
                         <li class="po-menu-list-3"><a href="websitedesign.html"><span class="no">03.</span>Website Design</a></li>
                         <li class="po-menu-list-4"><a href="websiterenewal.html"><span class="no">04.</span>Website Renewal</a></li>
                     </ul>
                 </div>
-                <div class="project-name">
+                <div class="project-name" data-aos="zoom-in-right" data-aos-delay="500" data-aos-duration="1000">
                     <p>Personal<br>Website</p>
                     <span>개인 웹사이트 "A Person with Infinite potential"</span>
                 </div>
             </div>
             <!-- right side -->
             <div class="portfolio-right">
-                <div>
-                    <div><img src="images/personal website.png" alt="퍼스널 웹사이트 이미지"></div>
+                <div data-aos="zoom-in-left" data-aos-delay="500" data-aos-duration="1000">
+                    <img src="images/personal website.png" alt="퍼스널 웹사이트 이미지">
                 </div>
                 <div class="info">
                     <div class="info-1"></div>
@@ -85,5 +87,10 @@
             </div>
         </div>
     </div>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
