@@ -207,8 +207,8 @@ body{
 } 
 .text-comment{ 
     color: #333;
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
 }
 .line-section-end{ 
     border-bottom: 1px solid;
@@ -229,11 +229,20 @@ body{
     width: 620px;
     height: 820px;
     display: inline-block;
-    margin-bottom: 3rem;
 }
 .travel-head{ 
-    font-size: 3rem;
+    font-size: 1.45rem;
     font-weight: 800;
+    margin-bottom: 0.75rem;
+    color: #255678;
+}
+.travel-back{ 
+    background: #255678;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
 }
 .experience-main-comment{ 
     font-size: 0.75rem;
@@ -241,6 +250,61 @@ body{
 .underline-text{ 
     background: linear-gradient(to top,  hsla(233, 100%, 84%, 0.93), transparent 40%);
 }    
+/* learning */
+.learning-section{ 
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+.learning-image{ 
+    background: url("../images/experience3.png") no-repeat center;
+    background-size: cover;
+    width: 620px;
+    height: 400px;
+}
+.learning-head{ 
+    font-size: 1.45rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+    color: #255678;
+}
+.learning-back{ 
+    background: #255678;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+.learning-main-comment{ 
+    font-size: 0.75rem;
+}
+/* communication */
+.communication-image{ 
+    background: url("../images/experience4.png") no-repeat center;
+    background-size: cover;
+    width: 620px;
+    height: 400px;
+    margin: 0 auto;
+}
+.communication-head{ 
+    font-size: 1.45rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+    color: #255678;
+}
+.communication-back{ 
+    background: #255678;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+.communication-main-comment{ 
+    font-size: 0.75rem;
+}
 /* 키프레임 */
 @keyframes slide {      
     50% {     
