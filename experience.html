@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience</title>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="css/nomalize.css">
     <link rel="stylesheet" href="css/experience.css">
@@ -28,7 +30,7 @@
                 <!-- menu bar -->
                 <nav class="nav">
                     <ul class="gnb">
-                        <li><a href="#"><span>HOME</span></a></li>
+                        <li><a href="index.html"><span>HOME</span></a></li>
                         <li><a href="aboutme.html"><span>ABOUT ME</span></a></li>
                         <li><a href="portfolio.html"><span>PORTFOLIO</span></a></li>
                         <li><a href="#"><span>EXPERIENCE</span></a></li>
@@ -59,8 +61,8 @@
             <!-- travel -->
             <section>
                 <div class="travel-section">
-                    <div class="travel-image"></div>
-                    <div>
+                    <div class="travel-image" data-aos="fade-right" data-aos-duration="1000"></div>
+                    <div data-aos="fade-left" data-aos-duration="1000">
                         <h1 class="travel-head">Travel</h1>
                         <h2 class="travel-back">세상은 넓고 도전은 멋지다.</h2><br>
                         <span class="underline-text">인도와 네팔 한 달 동안의 배낭 여행</span><br>
@@ -76,7 +78,7 @@
             <!-- learning -->
             <section>
                 <div class="learning-section">
-                    <div>
+                    <div data-aos="fade-right" data-aos-duration="1000">
                         <h1 class="learning-head">Learning</h1>
                         <h2 class="learning-back">배움에는 끝이 없다.</h2><br>
                         <span class="learning-main-comment">
@@ -86,7 +88,7 @@
                             이 외에도 관심을 가지는 분야에 대해 배우는 것을 두려워 하지 않습니다.
                         </span>
                     </div>
-                    <div class="learning-image"></div>
+                    <div class="learning-image" data-aos="fade-left" data-aos-duration="1000"></div>
                 </div>
             </section>
             <div class="line-section-end"></div>
@@ -94,7 +96,7 @@
             <section>
                 <div class="communication-section">
                     <div class="communication-image"></div>
-                    <div>
+                    <div class="experience-commentbox">
                         <h1 class="communication-head">Communication</h1>
                         <h2 class="communication-back">소통의 기본은 경청</h2><br>
                         <span class="communication-main-comment">
@@ -106,6 +108,33 @@
                 </div>
             </section>
         </div>
+        <!-- footer -->
+        <footer>
+            <div class="footer">
+                <span class="see-more">See More</span>
+                <div class="portfolio-experiment">
+                    <a href="aboutme.html">
+                        <span class="text">About Me</span>
+                        <span class="hoverline -right"></span>
+                        <span class="hoverline -top"></span>
+                        <span class="hoverline -left"></span>
+                        <span class="hoverline -bottom"></span>
+                    </a>
+                    <a href="portfolio.html">
+                        <span class="text">Portfolio</span>
+                        <span class="hoverline -right"></span>
+                        <span class="hoverline -top"></span>
+                        <span class="hoverline -left"></span>
+                        <span class="hoverline -bottom"></span>
+                    </a>
+                </div>
+            </div>
+        </footer>
     </div>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
