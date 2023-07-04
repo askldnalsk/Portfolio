@@ -30,8 +30,6 @@ body {
   letter-spacing: 0;
   word-break: keep-all; /* 단어를 지켜서 줄내림 */
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 .wrap {
@@ -40,10 +38,8 @@ body {
   display: block;
 }
 /* header */
-.line {
-  padding-top: 100px;
-  display: flex;
-  justify-content: space-around;
+.inner {
+  padding-top: 2rem;
 }
 .line-top-left {
   color: #333;
@@ -85,14 +81,15 @@ body {
 
 /* logo */
 .logo {
-  position: absolute;
-  left: 900px;
-  top: 85px;
-  display: inline-block;
-  background: url("../images/mainLogo.png") no-repeat center;
-  background-size: cover;
-  width: 120px;
-  height: 120px;
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    display: inline-block;
+    background: url("../images/mainLogo.png") no-repeat center;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    transform: translateX(-50%);
 }
 /* menu hover effect */
 .nav {
@@ -104,7 +101,7 @@ body {
   display: flex;
   align-items: center; /* 세로 중앙 정렬 */
   justify-content: space-evenly;
-  width: 105%;
+  width: 100%;
 }
 .gnb li a {
   position: relative;
@@ -157,18 +154,22 @@ body {
 }
 .line-end {
   border-bottom: 1px solid;
-  width: 1720px;
+  width: 100%;
   margin: 0 auto;
 }
 
 /* visual */
+.visual-wrap{ 
+  display: flex;
+  justify-content: space-evenly;
+}
 .swiper {
   display: flex;
-  width: 1000px;
-  height: 700px;
+  width: 50vw;
+  height: auto;
   padding: 50px;
   margin-left: 80px;
-  gap: 100px;
+  margin-right: 0;
 }
 .swiper-slide {
   background-position: center;
@@ -194,6 +195,10 @@ body {
   background-size: cover;
 }
 /* text */
+.text-box{ 
+  padding-left: 50px;
+  padding-top: 50px;
+}
 .swiper-text {
   font-family: "Abril Fatface", cursive;
   font-size: 130px;
