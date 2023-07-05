@@ -307,7 +307,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 45px; 
-    margin-top: 3rem;
+    padding-top: 3rem;
 }
 .aboutme-box .aboutme-head{ 
     font-family: 'Abril Fatface', cursive;
@@ -484,7 +484,10 @@ body{
 .possibility-box{ 
     display: flex;
     justify-content: space-between;
-} 
+}
+
+
+
 .cmd-head{ 
     margin-top: 2.5rem;
     margin-bottom: 1rem;
@@ -695,3 +698,4 @@ body{
       transform: translateY(0);
     }
 }
+
