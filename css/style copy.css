@@ -30,6 +30,7 @@ body {
   letter-spacing: 0;
   word-break: keep-all; /* 단어를 지켜서 줄내림 */
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .wrap {
@@ -39,6 +40,8 @@ body {
 }
 /* header */
 .inner {
+  position: relative;
+  z-index: 5;
   padding-top: 2rem;
 }
 .line-top-left {
@@ -180,7 +183,7 @@ body {
 }
 .mb-bt span:nth-child(1) {
   top: 0;
-  transition: transform 0.3s;
+  transition: transform 0.5s;
 }
 .mb-bt span:nth-child(2) {
   top: calc(50% - 1px);
@@ -188,7 +191,7 @@ body {
 }
 .mb-bt span:nth-child(3) {
   bottom: 0;
-  transition: transform 0.3s;
+  transition: transform 0.5s;
 }
 
 /* mobile menu */
@@ -201,12 +204,14 @@ body {
   background-color: #fff;
   padding-top: 90px;
   transition: left 0.3s ease-in-out;
+  
 }
 .mb-nav.active {
   left: 0;
+  z-index: 3;
 }
 .mb-bt span {
-  background-color: #fff;
+  background-color: #000000;
   transition: 0.3s;
 }
 .mb-nav-gnb > li {
@@ -224,6 +229,7 @@ body {
 /* mobile button animation */
 .mb-bt span.active {
   background-color: #222;
+  z-index: 1;
 }
 .mb-bt.active span:nth-child(1) {
   transform: rotate(45deg);
@@ -239,13 +245,26 @@ body {
 
 /* media query */
 
-@media screen and (max-width: 1280px){ 
+@media screen and (max-width: 1280px){
+  .logo{ 
+    left:10%;
+    width:80px;
+    height: 80px;
+    top: 5px;
+  }
+  .inner .main-tittle{ 
+    font-size: 30px;
+  } 
   .gnb {
     display: none;
   }
   .mb-bt {
     right: 20px;
   }
+}
+/* swiper pagination 색깔변경 */
+:root {
+  --swiper-theme-color: #f0ae50;
 }
 
 /* visual */
@@ -259,7 +278,6 @@ body {
   width: 50%;
   height: auto;
   padding: 50px;
-  margin-left: 80px;
   margin-right: 0;
 }
 .swiper-slide {
@@ -288,12 +306,11 @@ body {
 /* text */
 .text-box{
   width: 50%; 
-  padding-left: 50px;
-  padding-top: 50px;
+  padding: 50px;
 }
 .swiper-text {
   font-family: "Abril Fatface", cursive;
-  font-size: 130px;
+  font-size: 10vw;
   margin: 0;
   margin-bottom: 30px;
 }
@@ -387,7 +404,7 @@ body {
   background: url("../images/codingimg.png") no-repeat center;
   background-size: cover;
   display: block;
-  width: 500px;
+  width: 100%;
   height: 200px;
   margin-top: 2rem;
 }
