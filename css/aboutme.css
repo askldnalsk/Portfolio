@@ -248,7 +248,7 @@ body{
 }
 
 /* media query */
-
+/* 1280 */
 @media screen and (max-width: 1280px){
   .logo{ 
     left:10%;
@@ -266,6 +266,26 @@ body{
     right: 20px;
   }
 }
+/* 768 */
+@media screen and (max-width: 768px){
+  .inner .main-tittle{ 
+    display: none;
+  }
+  .inner .bottom-line { 
+    display: none;
+  }
+  .visual-wrap{ 
+    flex-wrap: wrap;
+  }
+  .visual-wrap .swiper{ 
+    width: 100%;
+  } 
+  .visual-wrap .text-box{ 
+    width: 100%;
+  }
+
+}
+
 /* swiper pagination 색깔변경 */
 :root {
   --swiper-theme-color: #f0ae50;
@@ -296,12 +316,15 @@ body{
 .aboutspac{ 
     line-height: 2rem;
 }
-.aboutme-image{ 
+/* .aboutme-image{ 
     background: url("../images/profileimg.png") no-repeat center;
     background-size: cover;
     display: block;
     width: 400px;
     height: 530px;
+} */
+.aboutme-image img{ 
+  width: 100%;
 }
 .about-hello{ 
     font-size:1.5rem;
@@ -337,6 +360,8 @@ body{
     margin-left: 1rem;
 }
 .skills{ 
+    display: flex;
+    flex-direction: column;
     background-color: #3d5980;
     margin-left: 4rem;
 }
