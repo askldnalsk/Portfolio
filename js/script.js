@@ -1,4 +1,5 @@
 window.onload = () =>{
+    let $htmlTag = document.querySelector('html');
 
     let $mbBt = document.querySelector('.mb-bt');
     // 모바일 버튼
@@ -11,7 +12,8 @@ window.onload = () =>{
 
 
      // 클릭 시 active 클래스를 추가
-    $mbBt.addEventListener('click',() =>{ 
+    $mbBt.addEventListener('click',() =>{
+      $htmlTag.classList.toggle('active'); 
       $mbBt.classList.toggle('active');
       $mbNav.classList.toggle('active');
       $mbBtSpan.forEach(item => {
@@ -23,7 +25,8 @@ window.onload = () =>{
     window.addEventListener('resize',()=>{ 
       // window 화면 안쪽 너비 체크
       let width = window.innerWidth;
-      if(width > 1280){ 
+      if(width > 1080){
+        $htmlTag.classList.remove('active');
         $mbBt.classList.remove('active');
         $mbNav.classList.remove('active');
         $mbBtSpan.forEach(item =>{ 

@@ -18,7 +18,7 @@ var chartData = {
 //set chart options
 var config = {
     //To output the image of canvas chart, remove the comment below, then the outputting labels would not print too small or too big.
-    responsive: false,
+    responsive: true,
     layout: {
         padding: {
             top: 16,

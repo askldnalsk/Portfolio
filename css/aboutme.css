@@ -1,40 +1,42 @@
 @charset 'utf-8';
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR&display=swap');
-*{ 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 ul,
-li{ 
-    list-style: none;
+li {
+  list-style: none;
 }
 
-a{ 
-    text-decoration: none;
-    color: #333;
+a {
+  text-decoration: none;
+  color: #333;
 }
-img{ 
-    border: 0;
-    vertical-align: middle;
+img {
+  border: 0;
+  vertical-align: middle;
 }
-html { 
-    font-size: 16px;
+html {
+  font-size: 16px;
 }
-body{ 
-    background-color: #E6E2DD;
-    font-family: 'Noto Sans KR', sans-serif;
-    color: #222;
-    font-size: 16px;
-    line-height: 1; /* x1 */
-    letter-spacing: 0;
-    word-break: keep-all; /* 단어를 지켜서 줄내림 */
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+body {
+  background-color: #e6e2dd;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #222;
+  font-size: 16px;
+  line-height: 1; /* x1 */
+  letter-spacing: 0;
+  word-break: keep-all; /* 단어를 지켜서 줄내림 */
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
-
+html.active {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 .wrap {
   width: 100%;
   height: 100vh;
@@ -43,132 +45,129 @@ body{
 /* header */
 .inner {
   position: relative;
-  z-index: 5;
+  z-index: 12;
   padding-top: 2rem;
 }
-.line{ 
-    padding-top: 100px;
-    display: flex;
-    justify-content: space-around;
+.line {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-around;
 }
-.line-top-left{
-    color: #333;
-    border-bottom: 1px solid;
-    width: 750px;
-    height: 1px;
-    
+.line-top-left {
+  color: #333;
+  border-bottom: 1px solid;
+  width: 750px;
+  height: 1px;
 }
-.line-top-right{
-    color: #333;
-    border-bottom: 1px solid;
-    width: 750px;
-    height: 1px;   
+.line-top-right {
+  color: #333;
+  border-bottom: 1px solid;
+  width: 750px;
+  height: 1px;
 }
-.bottom-line{ 
-    display: flex;
-    justify-content: space-around;
+.bottom-line {
+  display: flex;
+  justify-content: space-around;
 }
-.line-bottom-left{
-    color: #333;
-    border-bottom: 1px solid;
-    width: 750px;
-    height: 1px;
-    
+.line-bottom-left {
+  color: #333;
+  border-bottom: 1px solid;
+  width: 750px;
+  height: 1px;
 }
-.line-bottom-right{
-    color: #333;
-    border-bottom: 1px solid;
-    width: 750px;
-    height: 1px;   
+.line-bottom-right {
+  color: #333;
+  border-bottom: 1px solid;
+  width: 750px;
+  height: 1px;
 }
-.inner .main-tittle{
-    display: flex; 
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 36px;
-    margin-right: 105px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
+.inner .main-tittle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 36px;
+  margin-right: 105px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* logo */
 .logo {
-    position: absolute;
-    left: 50%;
-    top: 60px;
-    display: inline-block;
-    background: url("../images/mainLogo.png") no-repeat center;
-    background-size: cover;
-    width: 120px;
-    height: 120px;
-    transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  display: inline-block;
+  background: url("../images/mainLogo.png") no-repeat center;
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  transform: translateX(-50%);
 }
 /* menu hover effect */
-.nav{ 
-    height: 100%;
+.nav {
+  height: 100%;
 }
 .gnb {
-    /* ul */
-    height: 100%;
-    display: flex;
-    align-items: center; /* 세로 중앙 정렬 */
-    justify-content: space-around;
-    width: 100%;
-} 
-.gnb li a { 
-    position: relative;
-    display: block;
-    margin: 10px 0;
-    padding: 10px 20px;
-    color: #262626;
-    transition: 0.5s;
-    z-index: 1;
+  /* ul */
+  height: 100%;
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: space-around;
+  width: 100%;
 }
-.gnb li a span{ 
-    font-size: 24px;
+.gnb li a {
+  position: relative;
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 1;
 }
-.gnb li a:before { 
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-top: 2px solid #262626;
-    border-bottom: 2px solid #262626;
-    transform: scaleY(2);
-    opacity: 0;
-    transition: 0.3s;
+.gnb li a span {
+  font-size: 1.3vw;
 }
-.gnb li a:after { 
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #262626;
-    transform: scale(0);
-    opacity: 0;
-    transition: 0.3s;
-    z-index: -1;
+.gnb li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #262626;
+  border-bottom: 2px solid #262626;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: 0.3s;
 }
-.gnb li a:hover{ 
-    color:#fff;
+.gnb li a:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
 }
-.gnb li a:hover:before{ 
-    transform: scaleY(1);
-    opacity: 1;
+.gnb li a:hover {
+  color: #fff;
 }
-.gnb li a:hover:after{ 
-    transform: scaleY(1);
-    opacity: 1;
+.gnb li a:hover:before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.gnb li a:hover:after {
+  transform: scaleY(1);
+  opacity: 1;
 }
 /* mobile btn */
 .mb-bt {
   position: absolute;
-  top: 50px;
+  top: 40px;
   right: -20000px;
   width: 30px;
   height: 22px;
@@ -208,11 +207,10 @@ body{
   background-color: #fff;
   padding-top: 90px;
   transition: left 0.3s ease-in-out;
-  
 }
 .mb-nav.active {
   left: 0;
-  z-index: 3;
+  z-index: 11;
 }
 .mb-bt span {
   background-color: #000000;
@@ -233,7 +231,7 @@ body{
 /* mobile button animation */
 .mb-bt span.active {
   background-color: #222;
-  z-index: 1;
+  z-index: 11;
 }
 .mb-bt.active span:nth-child(1) {
   transform: rotate(45deg);
@@ -248,73 +246,88 @@ body{
 }
 
 /* media query */
-/* 1280 */
-@media screen and (max-width: 1280px){
-  .logo{ 
-    left:10%;
-    width:80px;
-    height: 80px;
+/* 1080 */
+@media screen and (max-width: 1080px) {
+  .logo {
+    left: 10%;
+    width: 70px;
+    height: 70px;
     top: 5px;
   }
-  .inner .main-tittle{ 
-    font-size: 30px;
-  } 
+  .inner .main-tittle {
+    font-size: 2vw;
+  }
   .gnb {
     display: none;
   }
   .mb-bt {
     right: 20px;
   }
+  .visual-wrap {
+    flex-direction: column;
+    align-items: center !important;
+  }
+  .visual-wrap .swiper {
+    width: 100%;
+    max-width: 700px;
+  }
+  .text-box {
+    width: 100% !important;
+  }
+  .img-code {
+    width: 50%;
+  }
 }
 /* 768 */
-@media screen and (max-width: 768px){
-  .inner .main-tittle{ 
+@media screen and (max-width: 768px) {
+  .inner .main-tittle {
     display: none;
   }
-  .inner .bottom-line { 
+  .inner .bottom-line {
     display: none;
   }
-  .visual-wrap{ 
+  .visual-wrap {
     flex-wrap: wrap;
   }
-  .visual-wrap .swiper{ 
-    width: 100%;
-  } 
-  .visual-wrap .text-box{ 
+  .visual-wrap .swiper {
     width: 100%;
   }
-
+  .visual-wrap .text-box {
+    width: 100%;
+  }
 }
 
 /* swiper pagination 색깔변경 */
 :root {
   --swiper-theme-color: #f0ae50;
 }
-.line-end{ 
-    border-bottom: 1px solid;
-    width: 1720px;
-    margin: 0 auto;
+.line-end {
+  border-bottom: 1px solid;
+  width: 1720px;
+  margin: 0 auto;
 }
-.content{ 
-    max-width: 1280px;
-    margin: 0 auto;
+.content {
+  max-width: 1280px;
+  padding: 2rem;
+  margin: 0 auto;
 }
 /* about me section */
-.aboutme{ 
-    height: auto;
+.aboutme {
+  height: auto;
 }
-.aboutme-box{
-    display: flex;
-    justify-content: center;
-    gap: 45px; 
-    padding-top: 3rem;
+.aboutme-box {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding-top: 3rem;
+  width: 100%;
 }
-.aboutme-box .aboutme-head{ 
-    font-family: 'Abril Fatface', cursive;
-    font-size: 3rem;
+.aboutme-box .aboutme-head {
+  font-family: "Abril Fatface", cursive;
+  font-size: 3rem;
 }
-.aboutspac{ 
-    line-height: 2rem;
+.aboutspac {
+  line-height: 2rem;
 }
 /* .aboutme-image{ 
     background: url("../images/profileimg.png") no-repeat center;
@@ -323,379 +336,397 @@ body{
     width: 400px;
     height: 530px;
 } */
-.aboutme-image img{ 
+.aboutme-image{ 
+  width: 50%;
+}
+
+.aboutme-image img {
   width: 100%;
+  max-width: 400px;
 }
-.about-hello{ 
-    font-size:1.5rem;
-    line-height: 2.5rem;
+.about-hello {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
-.about-flex-box{ 
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.about-flex-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
 }
 
 /* 형광펜효과 */
-.underline-text{ 
-    box-shadow: inset 0 -20px 0 hsla(236, 91%, 83%, 0.93);
+.underline-text {
+  box-shadow: inset 0 -20px 0 hsla(236, 91%, 83%, 0.93);
 }
-.line-section-end{ 
-    border-bottom: 1px solid;
-    width: 1280px;
-    margin: 0 auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+.line-section-end {
+  border-bottom: 1px solid;
+  width: 1280px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 /* skills section */
-.my-skill{ 
-    background-color: #3d5980;
-    display: block;
-    margin-top: 3rem;
+.my-skill {
+  background-color: #3d5980;
+  display: block;
+  margin-top: 3rem;
 }
-.skills-head{ 
-    font-family: 'Abril Fatface', cursive;
-    font-size: 3rem;
-    padding-top: 2rem;
-    margin-left: 1rem;
+.skills-head {
+  font-family: "Abril Fatface", cursive;
+  font-size: 3rem;
+  padding-top: 2rem;
+  margin-left: 1rem;
 }
-.skills{ 
-    display: flex;
-    flex-direction: column;
-    background-color: #3d5980;
-    margin-left: 4rem;
+.skills {
+  display: flex;
+  flex-direction: column;
+  background-color: #3d5980;
+  margin-left: 4rem;
 }
 /* chart */
-.container{ 
-    max-width: 600px;
-    padding: 20px;
+.container {
+  max-width: 600px;
+  padding: 20px;
 }
 .progress-bar {
-    height: 3px;
-    width: 100%;
-    position: relative;
-    z-index: 10;
-    background-color: #55708d;
+  height: 3px;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  background-color: #55708d;
 }
 .progress-bar .progress {
-    position: relative;
-    height: 100%;
-    background-color: #cfd6dd;
-    transition: width 0.5s ease-out;
-    border-radius: 0px 2px 2px 0px;
+  position: relative;
+  height: 100%;
+  background-color: #cfd6dd;
+  transition: width 0.5s ease-out;
+  border-radius: 0px 2px 2px 0px;
 }
 .progress-bar .glow {
-    width: 60px;
-    max-width: 100%;
-    height: 100%;
-    float: right;
+  width: 60px;
+  max-width: 100%;
+  height: 100%;
+  float: right;
 }
 .progress-bar .glow::before,
 .progress-bar .glow::after {
-    content: "";
-    display: block;
-    position: relative;
-    border-radius: 0px 2px 2px 0px;
+  content: "";
+  display: block;
+  position: relative;
+  border-radius: 0px 2px 2px 0px;
 }
 .progress-bar .glow::before {
-    background: transparent;
-    height: 100%;
-    box-shadow: 0px 0px 10px #cfd6dd, 0px 0px 10px #04bfff;
-    z-index: -5;
+  background: transparent;
+  height: 100%;
+  box-shadow: 0px 0px 10px #cfd6dd, 0px 0px 10px #04bfff;
+  z-index: -5;
 }
 .progress-bar .glow::after {
-    background: linear-gradient(to right, #3d5980 0%, transparent 100%);
-    height: calc(100% + 10px + 10px);
-    width: calc(100% + 10px);
-    top: -10px;
-    left: -10px;
-    z-index: -3;
+  background: linear-gradient(to right, #3d5980 0%, transparent 100%);
+  height: calc(100% + 10px + 10px);
+  width: calc(100% + 10px);
+  top: -10px;
+  left: -10px;
+  z-index: -3;
 }
 .label {
-    color: #ccc;
-    text-shadow: 0px 0px 2px #cfd6dd;
-    font-size: 24px;
+  color: #ccc;
+  text-shadow: 0px 0px 2px #cfd6dd;
+  font-size: 24px;
 }
 .label.one {
-    animation: label 0.5s ease-out 0s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-    margin-bottom: 1rem;
+  animation: label 0.5s ease-out 0s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  margin-bottom: 1rem;
 }
 .label.two {
-    animation: label 0.5s ease-out 0.5s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-    margin-bottom: 1rem;
+  animation: label 0.5s ease-out 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  margin-bottom: 1rem;
 }
 .label.three {
-    animation: label 0.5s ease-out 1s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-    margin-bottom: 1rem;
+  animation: label 0.5s ease-out 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  margin-bottom: 1rem;
 }
-.label.four { 
-    animation: label 0.5s ease-out 1.5s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-    margin-bottom: 1rem;
+.label.four {
+  animation: label 0.5s ease-out 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  margin-bottom: 1rem;
 }
-.label.five { 
-    animation: label 0.5s ease-out 2s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-    margin-bottom: 1rem;
+.label.five {
+  animation: label 0.5s ease-out 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  margin-bottom: 1rem;
 }
 
 .fill-1 {
-    animation: fill-1 0.5s ease-out 0s;
-    animation-fill-mode: forwards;
-    width: 0%;
+  animation: fill-1 0.5s ease-out 0s;
+  animation-fill-mode: forwards;
+  width: 0%;
 }
 .fill-2 {
-    animation: fill-2 0.5s ease-out 0.5s;
-    animation-fill-mode: forwards;
-    width: 0%;
+  animation: fill-2 0.5s ease-out 0.5s;
+  animation-fill-mode: forwards;
+  width: 0%;
 }
 
 .fill-3 {
-    animation: fill-3 0.5s ease-out 1s;
-    animation-fill-mode: forwards;
-    width: 0%;
+  animation: fill-3 0.5s ease-out 1s;
+  animation-fill-mode: forwards;
+  width: 0%;
 }
-.fill-4 { 
-    animation: fill-4 0.5s ease-out 1.5s;
-    animation-fill-mode: forwards;
-    width: 0%;
+.fill-4 {
+  animation: fill-4 0.5s ease-out 1.5s;
+  animation-fill-mode: forwards;
+  width: 0%;
 }
-.fill-5{ 
-    animation: fill-5 0.5s ease-out 2s;
-    animation-fill-mode: forwards;
-    width: 0%;
+.fill-5 {
+  animation: fill-5 0.5s ease-out 2s;
+  animation-fill-mode: forwards;
+  width: 0%;
 }
 /* possibility section */
-.my-possibility{ 
-    margin-top: 3rem;
+.my-possibility {
+  margin-top: 3rem;
 }
-.possibility-head{ 
-    font-family: 'Abril Fatface', cursive;
-    font-size: 3rem;
+.possibility-head {
+  font-family: "Abril Fatface", cursive;
+  font-size: 3rem;
 }
-.possibility-box{ 
-    display: flex;
-    justify-content: space-between;
+.possibility-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.possibility-comment {
+  width: 50%;
+}
+.possibility-chart {
+  width: 50%;
+}
+/* chart.js */
+#myChartOne {
+  width: 100% !important;
+  height: auto !important;
 }
 
-
-
-.cmd-head{ 
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
+.cmd-head {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
 }
-.cmd-span{ 
-    line-height: 1.5rem;
+.cmd-span {
+  line-height: 1.5rem;
 }
 /* logo design */
 
-.logo-head{ 
-    font-family: 'Abril Fatface', cursive;
-    font-size: 3rem;
-    margin-bottom: 3rem;
+.logo-head {
+  font-family: "Abril Fatface", cursive;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }
-.logo-comment{
-    display: block; 
-    text-align: right;
-    margin-bottom: 3rem;
-
+.logo-comment {
+  display: block;
+  text-align: right;
+  margin-bottom: 3rem;
 }
-.logo-image{ 
-    background: url("../images/logobig.png") no-repeat center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-
+.logo-image {
+  background: url("../images/logobig.png") no-repeat center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
 }
-.logo-consulting{ 
-    background: url("../images/logoconsulting.png") no-repeat center;
-    background-size: cover;
-    width: 500px;
-    height: 140px;
-    margin-bottom: 3rem;
+.logo-consulting {
+  background: url("../images/logoconsulting.png") no-repeat center;
+  background-size: cover;
+  width: 500px;
+  height: 140px;
+  margin-bottom: 3rem;
 }
 /* footer */
-.footer{ 
-    width: 100%;
-    height: 200px;
-    background-color: #b4b2c1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    gap: 0.8rem;
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #b4b2c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  gap: 0.8rem;
 }
-.see-more{
-    color: #fff; 
-    margin: 0 auto;
-    display: block;
+.see-more {
+  color: #fff;
+  margin: 0 auto;
+  display: block;
 }
 /* portfolio hover  */
 .portfolio-experiment {
-    background: #b4b2c1;
+  background: #b4b2c1;
 }
 .portfolio-experiment a {
-    color: #fff;
-    padding: 0.7em calc(0.7em * 1.2);
-    display: inline-block;
-    border: 3px solid transparent;
-    position: relative;
-    font-size: 2.5em;
-    cursor: pointer;
-    letter-spacing: 0.07em;
+  color: #fff;
+  padding: 0.7em calc(0.7em * 1.2);
+  display: inline-block;
+  border: 3px solid transparent;
+  position: relative;
+  font-size: 2.5em;
+  cursor: pointer;
+  letter-spacing: 0.07em;
 }
 .portfolio-experiment a .text {
-    font-family: 'Abril Fatface', cursive;
-    transform: translate3d(0, 0.7em, 0);
-    display: block;
-    transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  font-family: "Abril Fatface", cursive;
+  transform: translate3d(0, 0.7em, 0);
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
 .portfolio-experiment a:after {
-    position: absolute;
-    content: "";
-    bottom: -3px;
-    left: calc(0.7em * 1.2);
-    right: calc(0.7em * 1.2);
-    height: 3px;
-    background: #f26522;
-    transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
-    transform-origin: left;
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  left: calc(0.7em * 1.2);
+  right: calc(0.7em * 1.2);
+  height: 3px;
+  background: #f26522;
+  transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s,
+    right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s,
+    left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+  transform-origin: left;
 }
-  .portfolio-experiment .hoverline {
-    position: absolute;
-    background: #f26522;
-  }
-  .portfolio-experiment .hoverline.-right, .portfolio-experiment .hoverline.-left {
-    width: 3px;
-    bottom: -3px;
-    top: -3px;
-    transform: scale3d(1, 0, 1);
-  }
-  .portfolio-experiment .hoverline.-top, .portfolio-experiment .hoverline.-bottom {
-    height: 3px;
-    left: -3px;
-    right: -3px;
-    transform: scale3d(0, 1, 1);
-  }
-  .portfolio-experiment .hoverline.-right {
-    right: -3px;
-    transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
-    transform-origin: top;
-  }
-  .portfolio-experiment .hoverline.-top {
-    top: -3px;
-    transition: transform 0.08s linear 0.43s;
-    transform-origin: left;
-  }
-  .portfolio-experiment .hoverline.-left {
-    left: -3px;
-    transition: transform 0.08s linear 0.51s;
-    transform-origin: bottom;
-  }
-  .portfolio-experiment .hoverline.-bottom {
-    bottom: -3px;
-    transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
-    transform-origin: right;
-  }
-  .portfolio-experiment a:hover .text,
-  .portfolio-experiment a:active .text {
-    transform: translate3d(0, 0, 0);
-    transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
-  }
-  .portfolio-experiment a:hover:after,
-  .portfolio-experiment a:active:after {
-    transform: scale3d(0, 1, 1);
-    right: -3px;
-    left: -3px;
-    transform-origin: right;
-    transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
-  }
-  .portfolio-experiment a:hover .hoverline,
-  .portfolio-experiment a:active .hoverline {
-    transform: scale3d(1, 1, 1);
-  }
-  .portfolio-experiment a:hover .hoverline.-right,
-  .portfolio-experiment a:active .hoverline.-right {
-    transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
-    transform-origin: bottom;
-  }
-  .portfolio-experiment a:hover .hoverline.-top,
-  .portfolio-experiment a:active .hoverline.-top {
-    transition: transform 0.08s linear 0.4s;
-    transform-origin: right;
-  }
-  .portfolio-experiment a:hover .hoverline.-left,
-  .portfolio-experiment a:active .hoverline.-left {
-    transition: transform 0.08s linear 0.48s;
-    transform-origin: top;
-  }
-  .portfolio-experiment a:hover .hoverline.-bottom,
-  .portfolio-experiment a:active .hoverline.-bottom {
-    transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
-    transform-origin: left;
-  }
+.portfolio-experiment .hoverline {
+  position: absolute;
+  background: #f26522;
+}
+.portfolio-experiment .hoverline.-right,
+.portfolio-experiment .hoverline.-left {
+  width: 3px;
+  bottom: -3px;
+  top: -3px;
+  transform: scale3d(1, 0, 1);
+}
+.portfolio-experiment .hoverline.-top,
+.portfolio-experiment .hoverline.-bottom {
+  height: 3px;
+  left: -3px;
+  right: -3px;
+  transform: scale3d(0, 1, 1);
+}
+.portfolio-experiment .hoverline.-right {
+  right: -3px;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  transform-origin: top;
+}
+.portfolio-experiment .hoverline.-top {
+  top: -3px;
+  transition: transform 0.08s linear 0.43s;
+  transform-origin: left;
+}
+.portfolio-experiment .hoverline.-left {
+  left: -3px;
+  transition: transform 0.08s linear 0.51s;
+  transform-origin: bottom;
+}
+.portfolio-experiment .hoverline.-bottom {
+  bottom: -3px;
+  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  transform-origin: right;
+}
+.portfolio-experiment a:hover .text,
+.portfolio-experiment a:active .text {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+.portfolio-experiment a:hover:after,
+.portfolio-experiment a:active:after {
+  transform: scale3d(0, 1, 1);
+  right: -3px;
+  left: -3px;
+  transform-origin: right;
+  transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s,
+    right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
+}
+.portfolio-experiment a:hover .hoverline,
+.portfolio-experiment a:active .hoverline {
+  transform: scale3d(1, 1, 1);
+}
+.portfolio-experiment a:hover .hoverline.-right,
+.portfolio-experiment a:active .hoverline.-right {
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  transform-origin: bottom;
+}
+.portfolio-experiment a:hover .hoverline.-top,
+.portfolio-experiment a:active .hoverline.-top {
+  transition: transform 0.08s linear 0.4s;
+  transform-origin: right;
+}
+.portfolio-experiment a:hover .hoverline.-left,
+.portfolio-experiment a:active .hoverline.-left {
+  transition: transform 0.08s linear 0.48s;
+  transform-origin: top;
+}
+.portfolio-experiment a:hover .hoverline.-bottom,
+.portfolio-experiment a:active .hoverline.-bottom {
+  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  transform-origin: left;
+}
 /* key frame */
 
 @keyframes fill-1 {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 90%;
-    }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
 }
 @keyframes fill-2 {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 80%;
-    }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
 }
 @keyframes fill-3 {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 80%;
-    }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
 }
 @keyframes fill-4 {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 50%;
-    }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
 }
 @keyframes fill-5 {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 50%;
-    }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
 }
 
 @keyframes label {
-    0% {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    100% {
-      opacity: 0.9;
-      transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
 }
-
