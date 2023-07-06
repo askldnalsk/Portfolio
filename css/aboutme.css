@@ -39,7 +39,7 @@ html.active {
 }
 .wrap {
   width: 100%;
-  height: 100vh;
+  position: relative;
   display: block;
 }
 /* header */
@@ -248,6 +248,7 @@ html.active {
 /* media query */
 /* 1080 */
 @media screen and (max-width: 1080px) {
+  /* header구간 */
   .logo {
     left: 10%;
     width: 70px;
@@ -263,37 +264,47 @@ html.active {
   .mb-bt {
     right: 20px;
   }
-  .visual-wrap {
+  /* aboutMe 구간 */
+  .aboutme-box{ 
     flex-direction: column;
-    align-items: center !important;
   }
-  .visual-wrap .swiper {
-    width: 100%;
-    max-width: 700px;
-  }
-  .text-box {
+  .about-flex-box{ 
     width: 100% !important;
   }
-  .img-code {
-    width: 50%;
+  /* logo design 구간 */
+  .logo-consulting{ 
+    display: none;
+  }
+  /* 차트 구간 */
+  .possibility-box { 
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .possibility-comment{ 
+    width: 100% !important;
   }
 }
 /* 768 */
 @media screen and (max-width: 768px) {
+  /* header 구간 */
   .inner .main-tittle {
     display: none;
   }
   .inner .bottom-line {
     display: none;
   }
-  .visual-wrap {
-    flex-wrap: wrap;
+  /* aboutMe 구간 */
+  .aboutme-image{ 
+    width: 100% !important;
   }
-  .visual-wrap .swiper {
-    width: 100%;
+  /* progress bar 구간 */
+  .label{ 
+    font-size : 1.5rem !important;
   }
-  .visual-wrap .text-box {
-    width: 100%;
+  /* 차트 구간 */
+  .possibility-chart{ 
+    width: 100% !important;
+    padding-top: 1rem;
   }
 }
 
@@ -376,17 +387,22 @@ html.active {
   font-family: "Abril Fatface", cursive;
   font-size: 3rem;
   padding-top: 2rem;
-  margin-left: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
 }
 .skills {
   display: flex;
   flex-direction: column;
   background-color: #3d5980;
-  margin-left: 4rem;
+  
+}
+.skill-wrap{ 
+  padding-left: 4rem;
+  padding-bottom: 4rem;
 }
 /* chart */
 .container {
-  max-width: 600px;
+  max-width: 80%;
   padding: 20px;
 }
 .progress-bar {
@@ -433,7 +449,7 @@ html.active {
 .label {
   color: #ccc;
   text-shadow: 0px 0px 2px #cfd6dd;
-  font-size: 24px;
+  font-size: 2rem;
 }
 .label.one {
   animation: label 0.5s ease-out 0s;
