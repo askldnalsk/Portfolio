@@ -16,10 +16,6 @@
         <!-- top -->
         <header class="header">
             <div class="inner">
-                <div class="line">
-                    <div class="line-top-left"></div>
-                    <div class="line-top-right"></div>
-                </div>
                 <a href="index.html" class="logo"></a>
                 <span class="main-tittle">O SE HOON'S PORTFOLIO</span>
                 <div class="bottom-line">
@@ -34,9 +30,27 @@
                         <li><a href="portfolio.html"><span>PORTFOLIO</span></a></li>
                         <li><a href="experience.html"><span>EXPERIENCE</span></a></li>
                     </ul>
+                    <!-- mobile btn -->
+                    <button class="mb-bt">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </nav>
-                <div class="line-end"></div>
+                <div class="bottom-line">
+                    <div class="line-bottom-left"></div>
+                    <div class="line-bottom-right"></div>
+                </div>
             </div>
+            <!-- mobile menu -->
+            <nav class="mb-nav">
+                <ul class="mb-nav-gnb">
+                    <li><a href="index.html"><span>HOME</span></a></li>
+                    <li><a href="aboutme.html"><span>ABOUT ME</span></a></li>
+                    <li><a href="portfolio.html"><span>PORTFOLIO</span></a></li>
+                    <li><a href="experience.html"><span>EXPERIENCE</span></a></li>
+                </ul>
+            </nav>
         </header>
         <!-- 컨텐츠내용 -->
         <div class="container">
@@ -91,6 +105,7 @@
     </div>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/header.js"></script>
     <script>
         AOS.init();
     </script>

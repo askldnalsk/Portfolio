@@ -32,16 +32,22 @@ body{
     word-break: keep-all; /* 단어를 지켜서 줄내림 */
     height: 100vh;
     overflow-x: hidden;
+}
+html.active {
+    overflow-x: hidden;
     overflow-y: hidden;
 }
-
 .wrap{ 
     width: 100%; 
-    height: 100vh;
+    position: relative;
     display: block;
 }
 /* header */
-
+.inner {
+    position: relative;
+    z-index: 12;
+    padding-top: 2rem;
+}
 .line{ 
     padding-top: 100px;
     display: flex;
@@ -91,13 +97,14 @@ body{
 /* logo */
 .logo{
     position: absolute;
-    left: 900px;
-    top: 85px;
+    left: 50%;
+    top: 60px;
     display: inline-block;
     background: url("../images/mainLogo.png") no-repeat center;
     background-size: cover;
     width: 120px;
     height: 120px;
+    transform: translateX(-50%);
 }
 /* menu hover effect */
 .nav{ 
@@ -108,8 +115,8 @@ body{
     height: 100%;
     display: flex;
     align-items: center; /* 세로 중앙 정렬 */
-    justify-content: space-evenly;
-    width: 105%;
+    justify-content: space-around;
+    width: 100%;
 } 
 .gnb li a { 
     position: relative;
@@ -121,7 +128,7 @@ body{
     z-index: 1;
 }
 .gnb li a span{ 
-    font-size: 24px;
+    font-size: 1.3vw;
 }
 .gnb li a:before { 
     content: "";
@@ -165,6 +172,117 @@ body{
     width: 1720px;
     margin: 0 auto;
 }
+/* mobile btn */
+.mb-bt {
+    position: absolute;
+    top: 40px;
+    right: -20000px;
+    width: 30px;
+    height: 22px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .mb-bt span {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.5s;
+  }
+  .mb-bt span:nth-child(1) {
+    top: 0;
+    transition: transform 0.5s;
+  }
+  .mb-bt span:nth-child(2) {
+    top: calc(50% - 1px);
+    transition: opacity 0.2s;
+  }
+  .mb-bt span:nth-child(3) {
+    bottom: 0;
+    transition: transform 0.5s;
+  }
+  
+  /* mobile menu */
+  .mb-nav {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    padding-top: 90px;
+    transition: left 0.3s ease-in-out;
+  }
+  .mb-nav.active {
+    left: 0;
+    z-index: 11;
+  }
+  .mb-bt span {
+    background-color: #000000;
+    transition: 0.3s;
+  }
+  .mb-nav-gnb > li {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .mb-nav-gnb > li > a {
+    display: block;
+    padding: 20px 70px 20px 40px;
+    font-size: 24px;
+  }
+  
+  .gnb > li > a.active {
+    color: #222;
+  }
+  /* mobile button animation */
+  .mb-bt span.active {
+    background-color: #222;
+    z-index: 11;
+  }
+  .mb-bt.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: calc(50% - 1px);
+  }
+  .mb-bt.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .mb-bt.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: calc(50% - 1px);
+  }
+  
+  /* media query */
+  /* 1080 */
+  @media screen and (max-width: 1080px) {
+    /* header구간 */
+    .logo {
+      left: 10%;
+      width: 70px;
+      height: 70px;
+      top: 5px;
+    }
+    .inner .main-tittle {
+      font-size: 2vw;
+    }
+    .gnb {
+      display: none;
+    }
+    .mb-bt {
+      right: 20px;
+    }
+  }
+  /* 768 */
+  @media screen and (max-width: 768px) {
+    /* header 구간 */
+    .inner .main-tittle {
+      display: none;
+    }
+    .inner .bottom-line {
+      display: none;
+    }
+  }
 /* content */
 .container{ 
     width: 1920px;

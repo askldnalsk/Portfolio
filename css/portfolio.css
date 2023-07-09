@@ -117,8 +117,8 @@ html.active {
     height: 100%;
     display: flex;
     align-items: center; /* 세로 중앙 정렬 */
-    justify-content: space-evenly;
-    width: 105%;
+    justify-content: space-around;
+    width: 100%;
 } 
 .gnb li a { 
     position: relative;
