@@ -250,36 +250,7 @@ html.active {
   bottom: calc(50% - 1px);
 }
 
-/* media query */
-/* 1080 */
-@media screen and (max-width: 1080px) {
-  /* header구간 */
-  .logo {
-    left: 10%;
-    width: 70px;
-    height: 70px;
-    top: 5px;
-  }
-  .inner .main-tittle {
-    font-size: 2vw;
-  }
-  .gnb {
-    display: none;
-  }
-  .mb-bt {
-    right: 20px;
-  }
-}
-/* 768 */
-@media screen and (max-width: 768px) {
-  /* header 구간 */
-  .inner .main-tittle {
-    display: none;
-  }
-  .inner .bottom-line {
-    display: none;
-  }
-}
+
 
 /* content */
 .container {
@@ -288,11 +259,12 @@ html.active {
   margin: 0 auto;
   color: black;
   position: relative;
+  align-items: center;
 }
 /* portfolio-left */
 .portfolio-left {
   background: #f0ae50;
-  width: 50%;
+  width: 43%;
   position: relative;
   padding-bottom: 10rem;
   padding-top: 10.625rem;
@@ -307,9 +279,9 @@ html.active {
   padding-bottom: 1.2rem;
 }
 .container .portfolio-menu .po-menu-list a {
-  font-size: 24px;
+  font-size: 1.6667vw;
   font-weight: 800;
-  line-height: 45px;
+  line-height: 2.8125rem;
   color: #fff;
 }
 .container .portfolio-menu .po-menu-list a .no {
@@ -341,7 +313,7 @@ html.active {
 .project-name > p {
   font-size: 109px;
   font-weight: 800;
-  line-height: 115px;
+  line-height: 7.1875rem;
   color: #000;
   margin-bottom: 1.875rem;
   font-family: "Abril Fatface", cursive;
@@ -353,11 +325,15 @@ html.active {
 
 /* portfolio-right */
 .portfolio-right {
-  width: 50%;
+  width: 57%;
   position: relative;
   padding-left: 3.625rem;
   padding-top: 3.625rem;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
 .po-img {
   width: 80%;
@@ -383,10 +359,10 @@ html.active {
 }
 .button {
   font-weight: 500;
-  line-height: 52px;
-  position: absolute;
+  line-height: 3.25rem;
+  /* position: absolute;
   right: 284px;
-  bottom: 284px;
+  bottom: 284px; */
 }
 .button .btn-wrap a {
   width: 215px;
@@ -403,4 +379,35 @@ html.active {
 }
 .button .process-btn {
   transition: all 0.3s;
+}
+
+/* media query */
+/* 1080 */
+@media screen and (max-width: 1080px) {
+  /* header구간 */
+  .logo {
+    left: 10%;
+    width: 70px;
+    height: 70px;
+    top: 5px;
+  }
+  .inner .main-tittle {
+    font-size: 2vw;
+  }
+  .gnb {
+    display: none;
+  }
+  .mb-bt {
+    right: 20px;
+  }
+}
+/* 768 */
+@media screen and (max-width: 768px) {
+  /* header 구간 */
+  .inner .main-tittle {
+    display: none;
+  }
+  .inner .bottom-line {
+    display: none;
+  }
 }
