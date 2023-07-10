@@ -31,7 +31,7 @@ body {
   word-break: keep-all; /* 단어를 지켜서 줄내림 */
   width: 100%;
   height: 100%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 html.active {
   overflow-x: hidden;
@@ -327,8 +327,7 @@ html.active {
 .portfolio-right {
   width: 57%;
   position: relative;
-  padding-left: 3.625rem;
-  padding-top: 3.625rem;
+  padding: 3.625rem;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -342,14 +341,13 @@ html.active {
   width: 100%;
 }
 .info {
-  margin: 0;
   text-align: right;
   font-size: 13px;
   font-weight: 400;
   color: #000;
   position: absolute;
-  bottom: 200px;
-  right: 20px;
+  bottom: 0;
+  right: 10%;
   line-height: 1.5;
 }
 .info-1,
@@ -382,6 +380,7 @@ html.active {
 }
 
 /* media query */
+
 /* 1080 */
 @media screen and (max-width: 1080px) {
   /* header구간 */
@@ -400,6 +399,30 @@ html.active {
   .mb-bt {
     right: 20px;
   }
+  .container{ 
+    flex-direction: column;
+  }
+  .portfolio-left{ 
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 6.625rem;
+    justify-content: center;
+  }
+  .left-container{ 
+    margin-left: 0;
+  }
+  .portfolio-right{ 
+    width: 100%;
+  }
+  .info{ 
+    z-index: -1;
+    right: 5%;
+    bottom: 5%;
+  }
+  .container .portfolio-menu .po-menu-list a{ 
+    font-size: 2.6667vw;
+  }
+  
 }
 /* 768 */
 @media screen and (max-width: 768px) {
@@ -407,7 +430,13 @@ html.active {
   .inner .main-tittle {
     display: none;
   }
+  .inner { 
+    padding-top: 0;
+  }
   .inner .bottom-line {
     display: none;
+  }
+  .container .portfolio-menu .po-menu-list a{ 
+    font-size: 3.6667vw;
   }
 }
