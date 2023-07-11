@@ -33,7 +33,7 @@ body {
   overflow-x: hidden;
 }
 
-html.active {
+html.header-active {
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -210,7 +210,7 @@ html.active {
   transition: left 0.3s ease-in-out;
   
 }
-.mb-nav.active {
+.mb-nav.header-active {
   left: 0;
   z-index: 3;
 }
@@ -227,22 +227,22 @@ html.active {
   font-size: 24px;
 }
 
-.gnb > li > a.active {
+.gnb > li > a.header-active {
   color: #222;
 }
 /* mobile button animation */
-.mb-bt span.active {
+.mb-bt span.header-active {
   background-color: #222;
   z-index: 1;
 }
-.mb-bt.active span:nth-child(1) {
+.mb-bt.header-active span:nth-child(1) {
   transform: rotate(45deg);
   top: calc(50% - 1px);
 }
-.mb-bt.active span:nth-child(2) {
+.mb-bt.header-active span:nth-child(2) {
   opacity: 0;
 }
-.mb-bt.active span:nth-child(3) {
+.mb-bt.header-active span:nth-child(3) {
   transform: rotate(-45deg);
   bottom: calc(50% - 1px);
 }

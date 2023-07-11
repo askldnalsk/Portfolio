@@ -55,6 +55,7 @@ document.querySelectorAll(".slide-nav").forEach(item=>
         } else {
         document.getElementByClassName("slider__warpper").find('.flex__container[data-slide=' + next + ']').classList.add("flex--preStart");
         document.getElementByClassName("flex--active").classList.add("animate--end");
+        
         setTimeout(function () {
             document.getElementByClassName("flex--preStart").removeClass('animate--start flex--preStart').classList.add("flex--active");
             document.getElementByClassName("animate--end").classList.add("animate--start").removeClass('animate--end flex--active');
