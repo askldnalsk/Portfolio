@@ -439,4 +439,8 @@ html.active {
   .container .portfolio-menu .po-menu-list a{ 
     font-size: 3.6667vw;
   }
+  .project-name p { 
+    font-size: 59px;
+    line-height: 4.1875rem;
+  }
 }

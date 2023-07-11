@@ -1,0 +1,315 @@
+@charset 'utf-8';
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR&display=swap");
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+html {
+    font-size: 16px;
+}
+
+
+
+#website_sec1 {
+	width:100%;
+}
+#website_sec1 .site_list_container {
+	width:100%;
+	height:100vh;
+	position:relative;
+}
+.slider__navi {
+	position:absolute;
+	top:50%;
+	right:3%;
+	transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	-moz-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-o-transform:translateY(-50%);
+	z-index:99;
+}
+.slider__navi a {
+	display:block;
+	height:0.7rem;
+	width:1.8rem;
+	margin:1.2rem 0;
+	text-indent:-9999px;
+	box-shadow:none;
+	border:none;
+	background:rgba(0,0,0,0.9);
+}
+.slider__navi a.active {
+	background:rgba(255,255,255,1);
+	border:1px solid #121111;
+}
+.flex__container {
+	position:absolute;
+	top:0;
+	left:0;
+	display:flex;
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:-ms-flex;
+	-webkit-flex-flow:row wrap;
+	-moz-flex-flow:row wrap;
+	-ms-flex-flow:row wrap;
+	-o-flex-flow:row wrap;
+	flex-flow:row wrap;
+	-webkit-justify-content:flex-start;
+	-moz-justify-content:flex-start;
+	-ms-justify-content:flex-start;
+	-o-justify-content:flex-start;
+	justify-content:flex-start;
+	height:100vh;
+	width:100%;
+	z-index:1;
+}
+.flex__container.flex--active {
+	z-index:2;
+}
+.text--sub {
+	font-size:1.2rem;
+	letter-spacing:0.5rem;
+	padding-bottom:2.4rem;
+	margin-bottom:1rem;
+	font-family:'Montserrat',sans-serif;
+	border-bottom:1px solid #121111;
+	color:#121111;
+}
+.text--big {
+	font-family:'Abril Fatface', 'cursive';
+	font-size:5.35vw;
+	letter-spacing:-0.03rem;
+	font-weight:700;
+	line-height:1.2;
+	position:relative;
+	color:#121111;
+}
+.text--big::after {
+	position:absolute;
+	width:100%;
+	height:4vw;
+	background:url('../img/check.png');
+	background-size:cover;
+}
+.text--normal {
+	font-size:1.25rem;
+	font-family:'Chosunilbo_myungjo';
+	line-height:1.8;
+	margin:2.5rem 0 1.6rem 0;
+	color:#121111;
+}
+.flex__item {
+	height:100vh;
+	color:#fff;
+	transition:transform 0.1s linear;
+}
+.flex__item--left {
+	width:43%;
+	display:flex;
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:-ms-flex;
+	align-items:center;
+	-webkit-align-items:center;
+	-moz-align-items:center;
+	-ms-align-items:center;
+	transform-origin:left bottom;
+	transition:transform 0.1s linear 0.4s;
+	opacity:0;
+	position:relative;
+	overflow:hidden;
+}
+.flex__item--right {
+	width:57%;
+	transform-origin:right center;
+	transition:transform 0.1s linear 0s;
+	opacity:0;
+}
+.flex--preStart .flex__item--left,.flex--preStart .flex__item--right,.flex--active .flex__item--left,.flex--active .flex__item--right {
+	opacity:1;
+}
+.flex__item--left {
+	background:#f0ae50;
+}
+.flex__item--right {
+	background:#e6e2dd;
+}
+.flex__content {
+	margin-left:14%;
+	width:72%;
+	opacity:1;
+	transform:translate3d(0,0,0);
+	transition:transform 0.2s linear 0.2s,opacity 0.1s linear 0.2s;
+}
+.pokemon__img {
+	position:absolute;
+	bottom:22%;
+	right:9.7%;
+	max-height:35vw;
+	max-width:35vw;
+	opacity:1;
+	transform:translate3d(0,0,0);
+	transition: opacity 0.43s 0.6s,transform 0.4s 0.65s cubic-bezier(0,0.88,0.4,0.93);
+}
+/* 버튼 */
+.button,[class*=button-] {
+	position:relative;
+	overflow:hidden;
+	display:inline-block;
+	margin:0 1rem 1rem 0;
+	padding:0 2.8rem;
+	height:3.4rem;
+	font:300 1.65rem/3.4rem 'Rajdhani';
+	text-decoration:none;
+	letter-spacing:0.03rem;
+	color:#fff;
+	font-weight:500;
+	background:#121111;
+	border:solid 1px #f9f9f9;
+	border-radius:2px;
+	-moz-transition:ease 0.55s all;
+	-o-transition:ease 0.55s all;
+	-webkit-transition:ease 0.55s all;
+	transition:ease 0.55s all;
+}
+.button:hover,[class*=button-]:hover {
+	background:#f9f9f9;
+	border:1px solid #121111;
+}
+.button-hover:hover {
+	line-height:9em;
+}
+.button-hover:before {
+	content:attr(data-text);
+	color:#121111;
+	position:absolute;
+	top: -5.8rem;
+}
+/* Animate-START point */
+.flex__container.animate--start .flex__content {
+	transform:translate3d(0,-200%,0);
+	opacity:0;
+}
+.flex__container.animate--start .pokemon__img {
+	transform:translate3d(-200px,0,0);
+	opacity: 0;
+}
+/* Animate-END point */
+.flex__container.animate--end .flex__item--left {
+	transform:scaleY(0);
+}
+.flex__container.animate--end .flex__item--right {
+	transform:scaleX(0);
+}
+.flex__container.animate--end .flex__content {
+	transform:translate3d(0,200%,0);
+	opacity:0;
+}
+.flex__container.animate--end .pokemon__img {
+	transform:translate3d(200px,0,0);
+	opacity:0;
+}
+.click_btn_inf {
+	position:absolute;
+	top:-36%;
+	right:-1%;
+	width:4.2rem;
+	height:5rem;
+	text-indent:-9999px;
+	background:url('../images/clickimg2.png');
+	background-size:cover;
+	-webkit-animation:updown 0.9s infinite alternate;
+	-moz-animation:updown 0.9s linear infinite alternate;
+	-o-animation:updown 0.9s infinite alternate;
+	animation:updown 0.9s infinite alternate;
+}
+/* 반응형 */
+/* max-width :1024 */
+@media (max-width:1024px) {
+    
+.flex__container {
+    -webkit-flex-flow:column;
+    -moz-flex-flow:column;
+    -ms-flex-flow:column;
+    -o-flex-flow:column;
+    flex-flow:column;
+}
+.flex__content {
+    margin-left:10%;
+    width:80%;
+}
+.flex__item--left,.flex__item--right {
+    width:100%;
+}
+.flex__item--left {
+    padding-top:1.5rem;
+}
+.flex__item--right {
+    background:#f5f5f5;
+}
+.slider__navi {
+    top:75%;
+    -webkit-transform:translateY(-75%);
+    -moz-transform:translateY(-75%);
+    -ms-transform:translateY(-75%);
+    -o-transform:translateY(-75%);
+    transform:translateY(-75%);
+    right:10%;
+}
+.text--sub {
+    margin-bottom:1.2rem;
+}
+.pokemon__img {
+    right:0;
+    left:10%;
+    bottom:10%;
+    max-height:54vw;
+    max-width:54vw;
+}
+}
+@media (max-width:780px){ 
+    .flex__content {
+		margin-left:5%;
+		width:90%;
+	}
+	.flex__item {
+		height:90vh;
+	}
+	.flex__item--left {
+		padding-top:3rem;
+	}
+	.pokemon__img {
+		left:5%;
+		max-height:68vw;
+		max-width:68vw;
+	}
+	.slider__navi {
+		right:5%;
+	}
+	.slider__navi a {
+		width:1.6rem;
+		height:0.6rem;
+	}
+}
