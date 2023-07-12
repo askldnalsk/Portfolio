@@ -42,7 +42,6 @@ html.header-active {
 	height:auto;
 	position:relative;
 	overflow:hidden !important;
-	padding-left:5rem;
 }
 /* header */
 .inner {

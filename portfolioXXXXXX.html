@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/nomalize.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+    <!-- main layout -->
+    <div class="wrap">
+        <!-- top -->
+        <header class="header">
+            <div class="inner">
+                <a href="index.html" class="logo"></a>
+                <span class="main-tittle">O SE HOON'S PORTFOLIO</span>
+                <div class="bottom-line">
+                    <div class="line-bottom-left"></div>
+                    <div class="line-bottom-right"></div>
+                </div>
+                <!-- menu bar -->
+                <nav class="nav">
+                    <ul class="gnb">
+                        <li><a href="index.html"><span>HOME</span></a></li>
+                        <li><a href="aboutme.html"><span>ABOUT ME</span></a></li>
+                        <li><a href="#"><span>PORTFOLIO</span></a></li>
+                        <li><a href="experience.html"><span>EXPERIENCE</span></a></li>
+                    </ul>
+                    <!-- mobile btn -->
+                    <button class="mb-bt">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+                <div class="bottom-line">
+                    <div class="line-bottom-left"></div>
+                    <div class="line-bottom-right"></div>
+                </div>
+            </div>
+
+            <!-- mobile menu -->
+            <nav class="mb-nav">
+                <ul class="mb-nav-gnb">
+                    <li><a href="index.html"><span>HOME</span></a></li>
+                    <li><a href="aboutme.html"><span>ABOUT ME</span></a></li>
+                    <li><a href="#"><span>PORTFOLIO</span></a></li>
+                    <li><a href="experience.html"><span>EXPERIENCE</span></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- 컨텐츠내용 -->
+        <div class="container">
+            <!-- left side -->
+            <div class="portfolio-left">
+                <div class="left-container">
+                    <div class="selected-txt">SELECTED PROJECTS</div>
+                    <div class="portfolio-menu">
+                        <ul class="po-menu-list">
+                            <li class="po-menu-list-1"><a href="#"><span class="select-no">01.</span>Personal Website</a></li>
+                            <li class="po-menu-list-2"><a href="clonecoding.html"><span class="no">02.</span>Clone Coding</a></li>
+                            <li class="po-menu-list-3"><a href="websitedesign.html"><span class="no">03.</span>Website Design</a></li>
+                            <li class="po-menu-list-4"><a href="websiterenewal.html"><span class="no">04.</span>Website Renewal</a></li>
+                        </ul>
+                    </div>
+                    <div class="project-name" data-aos="zoom-in-right" data-aos-delay="500" data-aos-duration="1000">
+                        <p>Personal<br>Website</p>
+                        <span>개인 웹사이트 "A Person with Infinite potential"</span>
+                    </div>
+                </div>
+            </div>
+            <!-- right side -->
+            <div class="portfolio-right">
+                <div data-aos="zoom-in-left" data-aos-delay="500" data-aos-duration="1000" class="po-img">
+                    <img src="images/personal website.png" alt="퍼스널 웹사이트 이미지">
+                </div>
+                <div class="info">
+                    <div class="info-1"></div>
+                    <div class="info-2">
+                        <strong>Project</strong>
+                        <br>
+                        "개인 웹 사이트 제작"
+                    </div>
+                    <div class="info-3">
+                        <strong>Date</strong>
+                        <br>
+                        "March 2023"
+                    </div>
+                    <div>
+                        <strong>Participation in work</strong>
+                        <br>
+                        "기획 100%, 디자인 100% 퍼블리싱 100%"
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="btn-wrap">
+                        <a href="https://askldnalsk.github.io/Portfolio/index.html" target="_blank" class="process-btn"><span>Process View</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/header.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
